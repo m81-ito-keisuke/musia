@@ -18,7 +18,7 @@ has_many :order
 ## musics table
 belongs_to :user
 has_many :comments
-has_one :order
+has_many :order
 
 |Column|Type|Options|
 |------|----|-------|
@@ -49,7 +49,7 @@ has_one :address
 |user_id|integer|null: false, foreign_key: true|
 
 ## addresses table
-belongs_to :customer
+belongs_to :order
 
 |Column|Type|Options|
 |------|----|-------|
