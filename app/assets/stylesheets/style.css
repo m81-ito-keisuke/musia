@@ -468,8 +468,11 @@ ul li {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 660px;
+  max-width: 1400px;
   *zoom: 1;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .row .grid-1,
@@ -485,8 +488,8 @@ ul li {
 .row .grid-11,
 .row .grid-12 {
   float: left;
-  margin-left: 0.9%;
-  margin-right: 0.9%;
+  /*margin-left: 0.9%;*/
+  /*margin-right: 0.9%;*/
 }
 
 .row .grid-1 {
@@ -510,7 +513,7 @@ ul li {
 }
 
 .row .grid-6 {
-  width: 48.2%;
+  /*width: 48.2%;*/
 }
 
 .row .grid-7 {
@@ -656,13 +659,13 @@ body {
   letter-spacing: 0.15em;
   font-size: 16px;
   color: #666;
-  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  font-family: 'Courier';
   margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: #666;
+  color: #5a3cf9;
 }
 
 a:hover {
@@ -738,7 +741,7 @@ header.header div.header__bar.row div.grid-6 a.post:hover {
 header.header {
   padding: 10px;
   border-bottom: 1px solid #D8D8D8;
-  background-color: #fff;
+  background-color: #dcfff4;
   position: fixed;
   top: 0;
   left: 0;
@@ -749,10 +752,11 @@ header.header {
 
 header.header div.header__bar.row {
   position: relative;
+  justify-content: center;
 }
 
 header.header div.header__bar.row h1.grid-6 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 41px;
   float: left;
 }
@@ -767,9 +771,9 @@ header.header div.header__bar.row div.grid-6 {
 }
 
 header.header div.header__bar.row div.grid-6 a.post {
-  width: 120px;
+  width: 125px;
   display: inline-left;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 header.header .user_nav {
@@ -859,10 +863,11 @@ div.contents.row .new_user {
 }
 
 div.contents.row div.content_post {
-  margin: 20px 0;
+  margin: 20px 15px;
   padding: 30px;
   position: relative;
-  height: 400px;
+  height: 240px;
+  width: 240px;
   color: #fff;
   background-size: cover;
   background-position: center center;
